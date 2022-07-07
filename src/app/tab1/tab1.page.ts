@@ -21,11 +21,32 @@ export class Tab1Page {
 
   constructor(private socialSharing: SocialSharing) { }
 
+  async onWebShareClicked() {
+
+    const shareData = {
+      title: 'MDN',
+      text: 'Learn web development on MDN!',
+      url: 'https://developer.mozilla.org'
+    };
+
+    try {
+
+      await navigator.share(shareData);
+
+      console.log('MDN shared successfully');
+
+    } catch (err) {
+
+      console.error(err);
+
+    }
+
+  }
 
   async onSocialShareClicked() {
 
     this.socialSharing.share(this.bigText);
-    this.socialSharing.share('Are We Having Fun Now?');
+    // this.socialSharing.share('Are We Having Fun Now?');
 
   }
 
