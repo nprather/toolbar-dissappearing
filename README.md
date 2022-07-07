@@ -1,5 +1,10 @@
 # Share via Messenger on iOS iPhone causes ionic Toolbar to move off top off screen
 
+#UPDATE: I Was Able to get this fixed using the method in this fix:
+
+# __https://github.com/ionic-team/capacitor-plugins/pull/832__
+
+
 ## Sharing on iOS ionic app causes the Toolbar to drift up and off the screen when using Messenger for sharing.  It doesn't matter if I use Capacitor Share Plugin, or Navigator.Share, or even the older Cordova Social Sharing plugin, they all have the same result when selecting Messenger as the sharing target, and you are sharing enough text that it seems to force Messenger to take up more of the screen, then we you go back into the ionic app after sharing, or cancelling the share, the app's toolbar floats off the top of the app.
 
 ## Steps to Reproduce:
