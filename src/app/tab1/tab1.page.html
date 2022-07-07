@@ -1,26 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 1 Hidden
+      Tab 1
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1 Shown</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-button strong="true" (click)="onShareClicked(false)" size="default" color="primary" expand="block" class="ion-margin-vertical">
-    <ion-icon slot="start" name="share-outline"></ion-icon>Share SMALL Text!
-  </ion-button>
+<ion-content class="ion-padding">
 
 
-  <ion-button strong="true" (click)="onShareClicked(true)" size="default" color="primary" expand="block"  class="ion-margin-vertical">
-    <ion-icon slot="start" name="share-outline"></ion-icon>Share BIG Text!
-  </ion-button>
+  <div class="ion-padding-vertical ion-margin-vertical">
+
+
+    <h2>Trying Old Social Sharing Plugin:</h2>
+
+    <ion-button strong="true" (click)="onSocialShareClicked()" size="large" color="primary" expand="block">
+      <ion-icon slot="start" name="share-outline"></ion-icon>Share Using Old Social Plugin!
+    </ion-button>
+
+  </div>
+
+
+
+
+  <div class="ion-padding-vertical">
+
+
+    <h2>Sharing Small Text Works Fine:</h2>
+
+    <ion-button strong="true" (click)="onShareClicked(false)" size="large" color="primary" expand="block">
+      <ion-icon slot="start" name="share-outline"></ion-icon>Share SMALL Text!
+    </ion-button>
+
+  </div>
+
+
+  <div class="ion-padding-vertical">
+
+    <h2>Sharing Large Text via Messages Causes Toolbar to Drift up off the top off the page:</h2>
+
+    <ion-button strong="true" (click)="onShareClicked(true)" size="large" color="primary" expand="block">
+      <ion-icon slot="start" name="share-outline"></ion-icon>Share BIG Text!
+    </ion-button>
+
+  </div>
+
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>

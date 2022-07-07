@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { Share } from '@capacitor/share';
 
+import { SocialSharing } from '@awesome-cordova-plugins/social-sharing/ngx';
 
 @Component({
   selector: 'app-tab1',
@@ -18,11 +19,19 @@ export class Tab1Page {
 
   private smallText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`;
 
-  constructor() { }
+  constructor(private socialSharing: SocialSharing) { }
+
+
+  async onSocialShareClicked() {
+
+    this.socialSharing.share('Are We Having Fun Now?');
+
+  }
+
 
   async onShareClicked(useBigText: boolean) {
 
-    const subject = `Sharing ${ (useBigText ? 'Big': 'Small') } Text`;
+    const subject = `Sharing ${(useBigText ? 'Big' : 'Small')} Text`;
 
     let textToShare = this.smallText;
 
@@ -35,7 +44,16 @@ export class Tab1Page {
       text: textToShare,
       url: 'https://www.myspiritualtoolkit.com',
       dialogTitle: 'Share with friends',
-    }).catch((err) => { console.error(err, 'My Share Error'); });
+    }).catch((err) => {
+
+      if (err.message !== 'Share canceled') {
+
+
+        console.error(err, 'My Share Error');
+
+      }
+
+    });
 
     console.log(myShare, 'myShare');
 
