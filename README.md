@@ -1,6 +1,6 @@
-# toolbar-dissappearing
+# toolbar-disappearing
 
-Trying to replicate a bug where the Toolbar Dissappears on iPhone
+Trying to replicate a bug where the Toolbar Disappears on iPhone
 after using the Capacitor Share Plugin and sharing a text message
 with at least a few paragraphs worth of text.
 
