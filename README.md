@@ -1,6 +1,6 @@
 # Share via Messenger on iOS iPhone causes ionic Toolbar to move off top off screen
 
-#UPDATE: I Was Able to get this fixed using the method in this fix:
+# UPDATE: I Was Able to get this fixed using the method in this fix:
 
 # __https://github.com/ionic-team/capacitor-plugins/pull/832__
 
