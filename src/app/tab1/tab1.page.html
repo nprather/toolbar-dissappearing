@@ -13,5 +13,14 @@
     </ion-toolbar>
   </ion-header>
 
+  <ion-button strong="true" (click)="onShareClicked(false)" size="default" color="primary" expand="block" class="ion-margin-vertical">
+    <ion-icon slot="start" name="share-outline"></ion-icon>Share SMALL Text!
+  </ion-button>
+
+
+  <ion-button strong="true" (click)="onShareClicked(true)" size="default" color="primary" expand="block"  class="ion-margin-vertical">
+    <ion-icon slot="start" name="share-outline"></ion-icon>Share BIG Text!
+  </ion-button>
+
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
