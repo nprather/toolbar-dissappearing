@@ -25,7 +25,8 @@ export class Tab1Page {
 
     const shareData = {
       title: 'MDN',
-      text: 'Learn web development on MDN!',
+      text: this.bigText,
+      // text: 'Learn web development on MDN!',
       url: 'https://developer.mozilla.org'
     };
 
