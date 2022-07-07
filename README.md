@@ -9,19 +9,20 @@
 4. Return to ionic app and notice how the toolbar has drifted off the screen.
 
 
-
-<BR><BR><BR><BR>
+<BR><BR>
 # HOW IT SHOULD LOOK WITH TOOLBAR IN PLACE:
 <BR><BR>
 ![IMG_2841 2](https://user-images.githubusercontent.com/3101108/177802735-8081cc61-c5cc-492b-8fd2-a2662b258971.PNG)
 
 
-<BR><BR><BR><BR>
+<BR><BR>
 # HOW IT SHOULD NOT LOOK WITH TOOLBAR OFF THE SCREEN AFTER SENDING TEXT VIA MESSENGER:
 <BR><BR>
 ![IMG_2840](https://user-images.githubusercontent.com/3101108/177802812-db961e9f-c653-4a41-bf61-9d5f9c18956b.PNG)
 
-<br><br><br><br>
+<BR><BR>
+
+# SETUP:
   
 Ionic:
 
