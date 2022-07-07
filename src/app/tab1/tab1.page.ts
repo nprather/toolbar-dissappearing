@@ -24,6 +24,7 @@ export class Tab1Page {
 
   async onSocialShareClicked() {
 
+    this.socialSharing.share(this.bigText);
     this.socialSharing.share('Are We Having Fun Now?');
 
   }
